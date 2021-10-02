@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Me</title>
+    <style>
+        img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            cursor: pointer;
+
+        }
+
+        .setting {
+            display: flex;
+            position: relative;
+            gap: 8px;
+            cursor: pointer;
+
+        }
+
+        .setting p {
+            color: rgb(140, 141, 143);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            position: relative;
+            bottom: 10px;
+            right: 13px;
+        }
+        .Message{
+            position: relative;
+            bottom: 6px;
+            right: 10px;
+            cursor: pointer;
+
+        }
+        .notification{
+            position: relative;
+            left: 10px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+
+        }
+        .data{
+            position: relative;
+            right: 24px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .chats{
+            position: relative;
+            right: 22px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .status{
+            position: relative;
+            right: 22px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .status p{
+            color: rgb(140, 141, 143);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            position: relative;
+            bottom: 10px;
+            right: 13px;
+        }
+        .user{
+            position: relative;
+            right: 30px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .privacy{
+            position: relative;
+            right: 39px;
+            cursor: pointer;
+            padding: 10px;
+            margin: 10px;
+        }
+        .avater{
+            position: relative;
+            right: 39px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .story{
+            position: relative;
+            right: 40px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .sms{
+            position: relative;
+            right: 40px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .phone{
+            position: relative;
+            right: 8px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .photos{
+            position: relative;
+            right: 36px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .bubbles{
+            position: relative;
+            right: 30px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .switch{
+            position: relative;
+            right: 10px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .setting{
+            position: relative;
+            left: 20px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .reported{
+            position: relative;
+            right: 10px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .report{
+            position: relative;
+            left: 18px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .help{
+            position: relative;
+            right: 44px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .legal{
+            position: relative;
+            right: 12px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        h5{
+            position: relative;
+            right: 80px;
+          font-family: 'Courier New', Courier, monospace;
+          color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <button>
+        <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+            alt="man">
+        <h3>Manish shrestha</h3>
+        <div class="setting">
+            <i class="bi bi-moon-fill"></i>
+            <div>
+                <span>Dark Mode</span>
+                <p>system</p>
+            </div>
+        </div>
+        <div class="Message">
+            <i class="bi bi-chat-dots"></i>
+            <span>Message Requests</span>
+        </div>
+        <div class="chats">
+            <i class="bi bi-archive-fill"></i>
+            <label for="#">Archived Chats</label>
+        </div>
+        <h5>profile</h5>
+        <div class="status">    
+            <i class="bi bi-chat-quote-fill"></i>
+            <label for="status">Active Status</label>
+            <p>On</p>
+        </div>
+        <div class="user">
+            <i class="bi bi-person-circle"></i>
+            <label for="username">Username</label>
+        </div>
+        <h5>Preferences</h5>
+        <div class="privacy">
+            <i class="bi bi-shield-fill"></i>
+            <label for="privacy">privacy</label>
+        </div>
+        <div class="avater">
+            <i class="bi bi-person-bounding-box"></i>
+            <label for="avater">Avater</label>
+        </div>
+        <div class="notification">
+            <i class="bi bi-bell-fill"></i>
+            <span>Notifications & Sounds</span>
+        </div>
+        <div class="data">
+            <i class="bi bi-life-preserver"></i>
+            <span>Data Saver</span>
+        </div>
+        <div class="story">
+            <i class="bi bi-clock-history"></i>
+            <label for="story">Story</label>
+        </div>
+        <div class="sms">
+            <i class="bi bi-chat-fill"></i>
+            <label for="sms">SMS</label>
+        </div>
+        <div class="phone">
+            <i class="bi bi-people-fill"></i>
+            <label for="phone">Phone Contacts</label>
+        </div>
+        <div class="photos">
+            <i class="bi bi-image-fill"></i>
+            <label for="photos">photos</label>
+        </div>
+        <div class="bubbles">
+            <i class="bi bi-chat-dots-fill"></i>
+            <label for="bubbles">Bubbles</label>
+        </div>
+        <h5>Account</h5>
+        <div class="switch">
+            <i class="bi bi-door-closed-fill"></i>
+            <label for="switch">Switch Account</label>
+        </div>
+        <div class="setting">
+            <i class="bi bi-gear"></i>
+            <label for="setting">Account Setting</label>
+        </div>
+        <div class="reported">
+            <i class="bi bi-flag-fill"></i>
+            <label for="reported">Reported Chats    </label>
+        </div>
+        <div class="report">
+            <i class="bi bi-bug-fill"></i>
+            <label for="report">Report Technical problem</label>
+        </div>
+        <div class="help">
+            <i class="bi bi-question-circle-fill"></i>
+            <label for="help">Help</label>
+        </div>
+        <div class="legal">
+            <i class="bi bi-newspaper"></i>
+            <label for="legal">Legal & Policies</label>
+        </div>
+    </button>
+</body>
+
+</html>
