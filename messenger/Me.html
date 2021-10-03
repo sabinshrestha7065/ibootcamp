@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>Me</title>
     <style>
+        button {
+            background: none;
+        }
+
         img {
             height: 100px;
             width: 100px;
@@ -18,10 +22,9 @@
 
         .setting {
             display: flex;
-            position: relative;
-            gap: 8px;
             cursor: pointer;
-
+            position: relative;
+            right: 10px;
         }
 
         .setting p {
@@ -29,46 +32,52 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 12px;
             position: relative;
-            bottom: 10px;
-            right: 13px;
+            bottom: 15px;
+            right: 1px;
         }
-        .Message{
+
+        .Message {
             position: relative;
             bottom: 6px;
-            right: 10px;
+            right: 29px;
             cursor: pointer;
 
         }
-        .notification{
-            position: relative;
-            left: 10px;
-            padding: 10px;
-            margin: 10px;
-            cursor: pointer;
 
-        }
-        .data{
+        .notification {
             position: relative;
-            right: 24px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
+            right: 20px;
         }
-        .chats{
+
+        .data {
+            position: relative;
+            padding: 10px;
+            margin: 10px;
+            right: 50px;
+            cursor: pointer;
+        }
+
+        .chats {
             position: relative;
             right: 22px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
+            right: 45px;
         }
-        .status{
+
+        .status {
             position: relative;
-            right: 22px;
+            right: 50px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
         }
-        .status p{
+
+        .status p {
             color: rgb(140, 141, 143);
             font-family: Arial, Helvetica, sans-serif;
             font-size: 12px;
@@ -76,109 +85,136 @@
             bottom: 10px;
             right: 13px;
         }
-        .user{
+
+        .user {
+            position: relative;
+            right: 30px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            right: 60px;
+        }
+
+        .privacy {
+            position: relative;
+            right: 70px;
+            cursor: pointer;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .avater {
+            position: relative;
+            right: 70px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .story {
+            position: relative;
+            right: 65px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .sms {
+            position: relative;
+            right: 65px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .phone {
             position: relative;
             right: 30px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
         }
-        .privacy{
+
+        .photos {
             position: relative;
-            right: 39px;
-            cursor: pointer;
-            padding: 10px;
-            margin: 10px;
-        }
-        .avater{
-            position: relative;
-            right: 39px;
+            right: 55px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
         }
-        .story{
+
+        .bubbles {
             position: relative;
-            right: 40px;
+            right: 50px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
         }
-        .sms{
+
+        .switch {
             position: relative;
-            right: 40px;
+            right: 25px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
         }
-        .phone{
+
+        .setting1 {
             position: relative;
-            right: 8px;
+            right: 24px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
         }
-        .photos{
+
+        .reported {
             position: relative;
-            right: 36px;
+            right: 20px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
         }
-        .bubbles{
+
+        .report {
             position: relative;
-            right: 30px;
+            left: 10px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
         }
-        .switch{
+
+        .help {
             position: relative;
-            right: 10px;
+            right: 50px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
         }
-        .setting{
+
+        .legal {
             position: relative;
-            left: 20px;
+            right: 14px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
         }
-        .reported{
+
+        h5 {
             position: relative;
-            right: 10px;
-            padding: 10px;
-            margin: 10px;
-            cursor: pointer;
+            right: 60px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: grey;
         }
-        .report{
-            position: relative;
-            left: 18px;
-            padding: 10px;
-            margin: 10px;
-            cursor: pointer;
+
+        .setting i {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background:none;
         }
-        .help{
-            position: relative;
-            right: 44px;
-            padding: 10px;
-            margin: 10px;
-            cursor: pointer;
-        }
-        .legal{
-            position: relative;
-            right: 12px;
-            padding: 10px;
-            margin: 10px;
-            cursor: pointer;
-        }
-        h5{
-            position: relative;
-            right: 80px;
-          font-family: 'Courier New', Courier, monospace;
-          color: grey;
+        i{
+            border-radius: 50%;
+            background-color: purple;
         }
     </style>
 </head>
@@ -191,20 +227,20 @@
         <div class="setting">
             <i class="bi bi-moon-fill"></i>
             <div>
-                <span>Dark Mode</span>
+                <label>Dark Mode</label>
                 <p>system</p>
             </div>
         </div>
         <div class="Message">
             <i class="bi bi-chat-dots"></i>
-            <span>Message Requests</span>
+            <label>Message Requests</label>
         </div>
         <div class="chats">
             <i class="bi bi-archive-fill"></i>
             <label for="#">Archived Chats</label>
         </div>
         <h5>profile</h5>
-        <div class="status">    
+        <div class="status">
             <i class="bi bi-chat-quote-fill"></i>
             <label for="status">Active Status</label>
             <p>On</p>
@@ -255,13 +291,13 @@
             <i class="bi bi-door-closed-fill"></i>
             <label for="switch">Switch Account</label>
         </div>
-        <div class="setting">
+        <div class="setting1">
             <i class="bi bi-gear"></i>
             <label for="setting">Account Setting</label>
         </div>
         <div class="reported">
             <i class="bi bi-flag-fill"></i>
-            <label for="reported">Reported Chats    </label>
+            <label for="reported">Reported Chats </label>
         </div>
         <div class="report">
             <i class="bi bi-bug-fill"></i>
