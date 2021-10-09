@@ -40,12 +40,12 @@ body{
     border: 6px solid transparent;
     border-radius: 0;
     border-bottom: 10px solid #442200;
-    transition: s;
+    transition: 0.2s;
     top: 20%;
     left: 50%;
-    transform: translate(-50%);
+    transform:translate(-50%);
 }
 .smily:hover .lips{
     width: 130px;
-    border-radius: 50%;
+    border-radius: 50% ;
 }
