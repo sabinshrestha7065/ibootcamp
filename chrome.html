@@ -35,9 +35,11 @@
             background-color: ghostwhite;
             border: 0px solid;
         }
-        .nav-main:hover{
+
+        .nav-main:hover {
             background-color: gainsboro;
         }
+
         .nav-main i {
             padding: 4px;
         }
@@ -82,45 +84,58 @@
             top: 10px;
             cursor: pointer;
         }
-        .sider a{
+
+        .sider a {
             color: black;
             font-size: small;
             margin: 3px;
+            line-height: 24px;
+
         }
-        .sider i{
+
+        .sider i {
             padding: 5px;
         }
+
         section img {
             display: flex;
             position: relative;
             top: 120px;
-            left: 30%;
+            left: 50%;
         }
-        .search{
+
+        .search {
             display: flex;
             height: 35px;
-            width: 380px;
+            width: 100%;
             position: relative;
             top: 200px;
             border-radius: 20px;
             box-shadow: .5px 0.5px 1px 1px gainsboro;
             justify-content: center;
         }
-        .search i{
+
+        .search i {
             padding: 10px;
         }
-        .apps{
-            display:flex;
+
+        .apps {
+            display: flex;
             gap: 45px;
             position: relative;
             top: 230px;
             justify-content: center;
         }
-        .apps i{
+
+        .apps i {
             font-size: 35px;
             cursor: pointer;
-            background: gainsboro;
-            border-radius: 50%;
+        }
+        .apps p{
+        position: relative;
+        right: 6px;
+        font-weight: bold;
+        font-size: small;
         }
     </style>
 </head>
@@ -159,12 +174,36 @@
         </div>
     </section>
     <div class="apps">
-        <i class="bi bi-facebook"></i>
-        <i class="bi bi-youtube"></i>
-        <i class="bi bi-github"></i>
-        <i class="bi bi-google"></i>
-        <i class="bi bi-plus"></i>
+        <div class="facebook">
+            <i class="bi bi-facebook"></i>
+            <p>Facebook</p>
+        </div>
+        <div class="youtube">
+            <i class="bi bi-youtube"></i>
+            <p>youtube</p>
+        </div>
+        <div class="github">
+            <i class="bi bi-github"></i>
+            <p>Github</p>
+        </div>
+        <div class="google">
+            <i class="bi bi-google"></i>
+            <p>Google</p>
+        </div>
+        <div class="add">
+            <i class="bi bi-plus"></i>
+            <p>ADD</p>
+        </div>
+        <!-- <button type="button" onclick="document.write(6+9)">click on</button> -->
+        <!-- <button onclick="window.print()">print</button> -->
     </div>
 </body>
+<script>
+    // function myfunction()
+    // document.getElementById("demo").innerHTML = "hello world";
+    // window.alert(5 + 8).
+    // console.log(6 + 4).
+    // document.write()
+</script>
 
 </html>
