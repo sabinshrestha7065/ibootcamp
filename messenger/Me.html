@@ -10,6 +10,10 @@
     <style>
         button {
             background: none;
+            border: none;
+            position: relative;
+            left: 40px;
+            scroll-behavior: unset;
         }
 
         img {
@@ -24,7 +28,7 @@
             display: flex;
             cursor: pointer;
             position: relative;
-            right: 10px;
+            right: 24px;
         }
 
         .setting p {
@@ -33,30 +37,34 @@
             font-size: 12px;
             position: relative;
             bottom: 15px;
-            right: 1px;
+            right: 12px;
+        }
+
+        .setting label {
+            position: relative;
+            left: -1px;
         }
 
         .Message {
             position: relative;
             bottom: 6px;
-            right: 29px;
+            right: 43px;
             cursor: pointer;
 
         }
 
         .notification {
             position: relative;
-            padding: 10px;
             margin: 10px;
             cursor: pointer;
-            right: 20px;
+            right: 34px;
         }
 
         .data {
             position: relative;
             padding: 10px;
             margin: 10px;
-            right: 50px;
+            right: 66px;
             cursor: pointer;
         }
 
@@ -66,13 +74,12 @@
             padding: 10px;
             margin: 10px;
             cursor: pointer;
-            right: 45px;
+            right: 54px;
         }
 
         .status {
             position: relative;
-            right: 50px;
-            padding: 10px;
+            right: 60px;
             margin: 10px;
             cursor: pointer;
         }
@@ -83,29 +90,26 @@
             font-size: 12px;
             position: relative;
             bottom: 10px;
-            right: 13px;
+            right: 12px;
         }
 
         .user {
             position: relative;
-            right: 30px;
-            padding: 10px;
             margin: 10px;
             cursor: pointer;
-            right: 60px;
+            right: 68px;
         }
 
         .privacy {
             position: relative;
-            right: 70px;
+            right: 78px;
             cursor: pointer;
-            padding: 10px;
             margin: 10px;
         }
 
         .avater {
             position: relative;
-            right: 70px;
+            right: 80px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
@@ -113,7 +117,7 @@
 
         .story {
             position: relative;
-            right: 65px;
+            right: 82px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
@@ -121,7 +125,7 @@
 
         .sms {
             position: relative;
-            right: 65px;
+            right: 84px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
@@ -129,7 +133,7 @@
 
         .phone {
             position: relative;
-            right: 30px;
+            right: 52px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
@@ -137,7 +141,7 @@
 
         .photos {
             position: relative;
-            right: 55px;
+            right: 78px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
@@ -145,23 +149,24 @@
 
         .bubbles {
             position: relative;
-            right: 50px;
+            right: 74px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
         }
 
-        .switch {
+         a {
             position: relative;
-            right: 25px;
+            right: 54px;
             padding: 10px;
             margin: 10px;
+            color: black;
             cursor: pointer;
         }
 
         .setting1 {
             position: relative;
-            right: 24px;
+            right: 52px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
@@ -169,7 +174,7 @@
 
         .reported {
             position: relative;
-            right: 20px;
+            right: 52px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
@@ -177,7 +182,7 @@
 
         .report {
             position: relative;
-            left: 10px;
+            right: 25px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
@@ -185,7 +190,7 @@
 
         .help {
             position: relative;
-            right: 50px;
+            right: 84px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
@@ -193,7 +198,7 @@
 
         .legal {
             position: relative;
-            right: 14px;
+            right: 50px;
             padding: 10px;
             margin: 10px;
             cursor: pointer;
@@ -201,8 +206,9 @@
 
         h5 {
             position: relative;
-            right: 60px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            right: 74px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: x-small;
             color: grey;
         }
 
@@ -210,11 +216,12 @@
             height: 50px;
             width: 50px;
             border-radius: 50%;
-            background:none;
+            background: none;
         }
-        i{
-            border-radius: 50%;
-            background-color: purple;
+
+        label {
+            position: relative;
+            left: 12px;
         }
     </style>
 </head>
@@ -260,11 +267,11 @@
         </div>
         <div class="notification">
             <i class="bi bi-bell-fill"></i>
-            <span>Notifications & Sounds</span>
+            <label for="notification">Notifications & Sounds</label>
         </div>
         <div class="data">
             <i class="bi bi-life-preserver"></i>
-            <span>Data Saver</span>
+            <label for="date">Data Saver</label>
         </div>
         <div class="story">
             <i class="bi bi-clock-history"></i>
@@ -287,10 +294,10 @@
             <label for="bubbles">Bubbles</label>
         </div>
         <h5>Account</h5>
-        <div class="switch">
+        <a href="./switch account.html">
             <i class="bi bi-door-closed-fill"></i>
             <label for="switch">Switch Account</label>
-        </div>
+        </a>
         <div class="setting1">
             <i class="bi bi-gear"></i>
             <label for="setting">Account Setting</label>
