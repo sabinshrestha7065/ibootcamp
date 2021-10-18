@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish shrestha</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif
+        }
+        body{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            min-height: 100vh;
+            background: #0e1538;
+        }
+        .box{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            overflow: hidden;
+            justify-content:center;
+            align-items: center;
+            background: rgba(0,0,0,5);
+            border-radius: 16px;
+        }
+        .box::before{
+            content: '';
+            position:absolute;
+            width: 150px;
+            height: 100%;
+            background: linear-gradient(#00ccff, #d400d4);
+            animation: animate 4s linear infinite ;
+        }
+        .box::after{
+            content: '';
+            position: absolute;
+            inset: 4px;
+            background:#0e1538 ;
+        }
+        @keyframes animate
+        {
+         0%
+         {
+             transform: rotate(0deg);
+         }  
+         100%
+         {
+             transform: rotate(350deg);
+         } 
+        }
+        .box h2{
+            color: #fff;
+            font-size: 10em;
+            position: relative;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+<div class="box">
+    <h2>02</h2>
+</div>
+</body>
+
+</html>
