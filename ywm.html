@@ -16,17 +16,15 @@
         body {
             display: flex;
             justify-content: center;
-            align-items: center;
-            scroll-margin-left: unset;
         }
 
         .border {
-            height: 500px;
-            width: 1050px;
+            height: 350px;
+            width: 800px;
             border: 5px solid #000;
             position: relative;
-            top: 550px;
-            left: 80px;
+            top: 450px;
+            left: 60px;
             overflow: hidden;
 
         }
@@ -44,7 +42,7 @@
             content: '';
             position: absolute;
             inset: 4px;
-            background: cadetblue;
+            background:greenyellow;
         }
 
         @keyframes animate {
@@ -57,20 +55,24 @@
             }
         }
 
+        .container{
+            position: relative;
+            bottom: 300px;
+        }
         .container p {
             color: pink;
             font-family: sans-serif;
             position: relative;
-            bottom: 410px;
-            left: 500px;
+            bottom: 350px;
+            left: 300px;
             word-spacing: 10px;
         }
 
         .container h1 {
             color: white;
             position: relative;
-            bottom: 400px;
-            left: 430px;
+            bottom: 330px;
+            left: 230px;
             font-family: cursive;
             font-style: italic;
             font-size: 50px;
@@ -85,14 +87,15 @@
             gap: 25px;
             position: relative;
             bottom: 200px;
-            left: 680px;
-            color: #fff;
+            left: 440px;
         }
 
         .youtube {
             display: flex;
             color: red;
             position: relative;
+            font-size: 14px;
+            z-index: 2;
         }
 
         .youtube h4 {
@@ -110,6 +113,8 @@
         .facebook {
             display: flex;
             color: #00ccff;
+            font-size: 14px;
+            z-index: 2;
         }
         .facebook h4 {
             position: relative;
@@ -126,6 +131,8 @@
         .instrgram {
             display: flex;
             color: #d400d4;
+            font-size: 14px;
+            z-index: 2;
         }
         .instrgram h4 {
             position: relative;
@@ -144,7 +151,7 @@
 <body>
     <div class="container">
         <div class="border"></div>
-        <img src="./download.jfif" alt="temple" height="600" width="1200">
+        <img src="./download.jfif" alt="temple" height="500" width="900">
 
         <p>BE WHAT YOU WANNA BE</p>
         <h1>Manish shrestha</h1>
