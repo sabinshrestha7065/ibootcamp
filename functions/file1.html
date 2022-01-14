@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>function</h1>
+    </div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <script>
+        /* parameters and arguments
+
+        const prints = function (name, surname) {
+            console.log(name, surname)
+
+        }
+        prints("manish", "shrestha")
+
+        const sum = function (firstNumber, secondNumber) {
+            console.log(`The sum of ${firstNumber} and ${secondNumber}   =`, firstNumber + secondNumber)
+        }
+        sum(1, 2)
+        sum(23, 45) */
+        const elements = document.querySelector("li");
+        const hydrogenBomb = function () {
+            const firstItem = elements[0]
+            elements.
+            textContent = `This bomb is exponded. `;
+        }
+        setTimeout(() => {
+            hydrogenBomb(0);
+        }, 1e3);
+        setTimeout(() => {
+            hydrogenBomb(1);
+        }, 2e3);
+        setTimeout(() => {
+            hydrogenBomb(2);
+        }, 3e3);
+
+        setTimeout(() => {
+            hydrogenBomb(3);
+        }, 4e3);
+        setTimeout(() => {
+            hydrogenBomb(4);
+        }, 5e3);
+    </script>
+</body>
+
+</html>
