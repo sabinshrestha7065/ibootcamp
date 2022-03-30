@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <title>features and funtions of computer</title>
+    <style>
+        body {
+            background: red;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 300px;
+        }
+
+        .feature h1 {
+            background: skyblue;
+            box-shadow: 10px 10px 5px 12px skyblue;
+        }
+
+        .funtion h1 {
+            background: skyblue;
+            box-shadow: 10px 10px 5px 12px skyblue;
+        }
+
+        .feature li {
+            list-style: none;
+            line-height: 70px;
+            font-size: 25px;
+            text-shadow: 1px 1px 2px black,
+                0 0 25px blue, 0 0 5px darkblue;
+            font-family: "Trirong", serif;
+        }
+
+        .funtion li {
+            list-style: none;
+            line-height: 70px;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            font-size: 25px;
+            font-family: "Trirong", serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="feature">
+            <h1>
+                Features of
+                computer
+            </h1>
+            <div>
+                <li id="speed"></li>
+                <li id="accuracy"></li>
+                <li id="storage"></li>
+                <li id="dilligence"></li>
+                <li id="versatility"></li>
+                <li id="reliability"></li>
+                <li id="auto"></li>
+                <li id="non-intelligent"></li>
+            </div>
+        </div>
+        <div class="funtion">
+            <h1>
+                functions of
+                computer
+            </h1>
+            <div>
+                <li id="business"></li>
+                <li id="banking"></li>
+                <li id="education"></li>
+                <li id="marketing"></li>
+                <li id="communication"></li>
+                <li id="engineering"></li>
+                <li id="government"></li>
+                <li id="medicine"></li>
+            </div>
+        </div>
+    </div>
+    <script>
+        const speed = document.getElementById("speed");
+        const accuracy = document.getElementById("accuracy");
+        const storage = document.getElementById("storage");
+        const dilligence = document.getElementById("dilligence");
+        const versatility = document.getElementById("versatility");
+        const reliability = document.getElementById("reliability");
+        const auto = document.getElementById("auto");
+        const nonIntelligent = document.getElementById("non-intelligent");
+
+        first = function () {
+            speed.textContent = "High speed";
+        };
+
+        second = function () {
+            accuracy.textContent = "Accuracy";
+        };
+        third = function () {
+            storage.textContent = "Storage capability";
+        };
+        fourth = function () {
+            dilligence.textContent = "Dilligence";
+        };
+        fifth = function () {
+            versatility.textContent = "Versatility";
+        };
+        sixth = function () {
+            reliability.textContent = "Reliability";
+        };
+        seventh = function () {
+            auto.textContent = "Automation";
+        };
+        eighth = function () {
+            nonIntelligent.textContent = "Non-intelligent";
+        };
+        
+        setTimeout(() => {
+            first();
+        }, 1e3);
+        setTimeout(() => {
+            second();
+        }, 2e3);
+        setTimeout(() => {
+            third();
+        }, 3e3);
+        setTimeout(() => {
+            fourth();
+        }, 4e3);
+        setTimeout(() => {
+            fifth();
+        }, 5e3);
+        setTimeout(() => {
+            sixth();
+        }, 6e3);
+        setTimeout(() => {
+            seventh();
+        }, 7e3);
+        setTimeout(() => {
+            eighth();
+        }, 8e3);
+        
+
+        const business = document.getElementById("business");
+        const banking = document.getElementById("banking");
+        const education = document.getElementById("education");
+        const marketing = document.getElementById("marketing");
+        const communication = document.getElementById("communication");
+        const engineering = document.getElementById("engineering");
+        const government = document.getElementById("government");
+        const medicine = document.getElementById("medicine");
+
+        nineth = function () {
+            business.textContent = "Business";
+        };
+        tenth = function () {
+            banking.textContent = "Banking";
+        };
+
+        eleventh = function () {
+            education.textContent = "Education";
+        };
+
+        twenth = function () {
+            marketing.textContent = "Marketing";
+        };
+        thirteeth = function () {
+            communication.textContent = "Communaction";
+        };
+        fourteeth = function () {
+            engineering.textContent = "Engineering Designs";
+        };
+        fifteen = function () {
+            government.textContent = "Goverment working";
+        };
+        sixteeth = function () {
+            medicine.textContent = "Medicine";
+        };
+
+        setTimeout(() => {
+            nineth();
+        }, 1e3);
+
+        setTimeout(() => {
+            tenth();
+        }, 2e3);
+        setTimeout(() => {
+            eleventh();
+        }, 3e3);
+        setTimeout(() => {
+            twenth();
+        }, 4e3);
+
+        setTimeout(() => {
+            thirteeth();
+        }, 5e3);
+        setTimeout(() => {
+            fourteeth();
+        }, 6e3);
+        setTimeout(() => {
+            fifteen();
+        }, 7e3);
+
+
+        setTimeout(() => {
+            sixteeth();
+        }, 8e3);
+    </script>
+</body>
+
+</html>

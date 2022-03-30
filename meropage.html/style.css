@@ -9,14 +9,15 @@
 
 .intro {
     list-style: none;
-    background: grey;
+    background: rgb(99, 96, 96);
     height: 90vh;
     width: 20vw;
     padding: 30px;
     line-height: 60px;
     font-family: sans-serif;
 }
-.intro li a{
+
+.intro li a {
     text-decoration: none;
     color: rgb(241, 236, 231);
 
@@ -59,7 +60,7 @@
 button {
     font-weight: bold;
     font-size: 14px;
-    background:skyblue;
+    background: skyblue;
     border: 1px solid skyblue;
     width: 120px;
     height: 30px;
@@ -75,7 +76,8 @@ button:hover {
     border: 1px solid yellowgreen;
 }
 
-/* .picture {
-    position: fixed;
-    left: 900px;
-} */
+.icon {
+    display: flex;
+    color: white;
+    gap: 220px;
+}
