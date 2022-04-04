@@ -5,30 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log-In</title>
+    <title>Register</title>
     <style>
         .container {
             width: 414px;
             position: absolute;
             left: 450px;
             background-color: black;
+            color: #fff;
             height: 650px;
             border: 1px solid gray;
         }
 
         .container h1 {
             position: absolute;
-            width: 126px;
+            width: 219px;
             height: 43px;
-            left: 144px;
-            top: 39px;
+            left: 98px;
+            top: 38px;
+            font-weight: 800;
             font-size: 31px;
             line-height: 42px;
+            text-align: center;
             letter-spacing: 0.23em;
             text-transform: uppercase;
-            color: #FFFFFF;
-            font-family: sans-serif;
-
         }
 
         .container p {
@@ -37,34 +37,39 @@
             height: 43px;
             left: 72px;
             top: 107px;
-            font-size: 13px;
+            font-weight: 800;
+            font-size: 14px;
             line-height: 19px;
             text-align: center;
-            letter-spacing: 0.26em;
+            letter-spacing: 0.23em;
             text-transform: uppercase;
-            color: #FFFFFF;
-            font-family: sans-serif;
+
         }
 
-        .username {
+        .email-part {
             position: absolute;
             top: 250px;
         }
 
-        .password {
+        .password-part {
             position: absolute;
             top: 350px;
         }
 
-        .log-in {
+        .confirm {
             position: absolute;
-            top: 500px;
+            top: 450px;
         }
 
-        .name {
+        .register {
+            position: absolute;
+            top: 550px;
+        }
+
+        .email {
             position: absolute;
             width: 366px;
-            height: 48px;
+            height: 40px;
             left: 24px;
             top: 25px;
             background: #FFFFFF;
@@ -72,10 +77,10 @@
             border: none;
         }
 
-        .security {
+        .password {
             position: absolute;
             width: 366px;
-            height: 48px;
+            height: 40px;
             left: 24px;
             top: 25px;
             background: #FFFFFF;
@@ -83,7 +88,33 @@
             border: none;
         }
 
-        .login-button {
+        .confirm-password {
+            position: absolute;
+            width: 366px;
+            height: 40px;
+            left: 24px;
+            top: 25px;
+            background: #FFFFFF;
+            border-radius: 3px;
+            border: none;
+        }
+
+        label {
+            position: absolute;
+            width: 190px;
+            height: 33px;
+            left: 15px;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.23em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-family: sans-serif;
+
+        }
+        .register-button{
             position: absolute;
             width: 366px;
             height: 48px;
@@ -96,44 +127,31 @@
             border: 1px solid #d1cccc;
             cursor: pointer;
         }
-
-        .login-button:hover {
+        .register-button:hover{
             border: 1px solid skyblue;
-        }
-
-        label {
-            position: absolute;
-            width: 124px;
-            height: 33px;
-            left: 22px;
-            font-weight: bold;
-            font-size: 15px;
-            line-height: 22px;
-            text-align: center;
-            letter-spacing: 0.23em;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            font-family: sans-serif;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>LOGIN</h1>
-        <p>GET STARTED NOW FOR <br> 20% DISCOUNT </p>
-        <div class="username">
-            <label for="name">USERNAME</label>
-            <input type="email" class="name">
+        <h1>register</h1>
+        <p>get started now for <br> 20% discount</p>
+        <div class="email-part">
+            <label for="email">email address</label>
+            <input type="email" class="email">
         </div>
-        <div class="password">
-            <label for="password">PASSWORD</label>
-            <input type="password" class="security">
+        <div class="password-part">
+            <label for="password">password</label>
+            <input type="password" class="password">
         </div>
-        <div class="log-in">
-            <button class="login-button">LOG IN</button>
+        <div class="confirm">
+            <label for="confirm-password">confirm password</label>
+            <input type="password" class="confirm-password">
         </div>
-
+        <div class="register">
+            <button class="register-button">REGISTER</button>
+        </div>
     </div>
 </body>
 

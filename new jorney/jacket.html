@@ -7,40 +7,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacket</title>
     <style>
+        body{
+            background-color: gainsboro;
+        }
         .container {
             position: absolute;
             width: 414px;
-            height: 503px;
+            height: 400px;
             left: 450px;
+            background-color: #974141;
+            background: url(./Rectangle\ 86.jpg);
         }
 
         .side {
             display: flex;
         }
 
+        .side h2 {
+            position: absolute;
+            width: 229px;
+            height: 60px;
+            left: 22px;
+            top: 445px;
+
+        }
+
+        .side p {
+            position: absolute;
+            width: 84px;
+            height: 34px;
+            left: 310px;
+            top: 445px;
+            font-size: 25px;
+            line-height: 34px;
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+            color: #000000;
+
+        }
+
+        .descrition {
+            position: absolute;
+            width: 117px;
+            height: 16px;
+            left: 22px;
+            top: 548px;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.29em;
+            text-transform: uppercase;
+            color: #171717;
+        }
+
+        .pargraph {
+            position: absolute;
+            width: 370px;
+            height: 135px;
+            left: 22px;
+            top: 578px;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 159.5%;
+            letter-spacing: -0.01em;
+            font-family: sans-serif;
+            color: #575757;
+        }
+
+        .buttons {
+            position: absolute;
+            width: 414px;
+            height: 111px;
+            left: 0px;
+            top: 780px;
+            background: #FFFFFF;
+        }
+
         .wishlist {
             position: absolute;
-            width: 150px;
+            width: 180px;
             height: 48px;
-            background: black;
+            left: 10px;
+            background: white;
+            color: black;
             border-radius: 3px;
             border: none;
-            color: #FFFFFF;
             border: 1px solid #d1cccc;
             cursor: pointer;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 15px;
+            text-align: center;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+
         }
 
         .bag {
             position: absolute;
-            width: 150px;
+            width: 180px;
             height: 48px;
-            left: 200px;
             background: black;
             border-radius: 3px;
             border: none;
             color: #FFFFFF;
             border: 1px solid #d1cccc;
             cursor: pointer;
+            left: 210px;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 15px;
+            text-align: center;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
         }
     </style>
 
@@ -48,14 +129,14 @@
 
 <body>
     <div class="container">
-        <div> <img src="./Rectangle 86.jpg" alt="jacket"></div>
         <div class="side">
             <h2>Oversized Denim <br> Jacket</h2>
             <p>$12.99</p>
         </div>
 
-        <p>DESCRIPTION</p>
-        <p>Straight cut shirt jacket in sturdy, washed denim. Features a pointed collar and buttons down the front.
+        <p class="descrition">DESCRIPTION</p>
+        <p class="pargraph">Straight cut shirt jacket in sturdy, washed denim. Features a pointed collar and buttons
+            down the front.
             Dropped shoulders and long sleeves with button cuffs. Detachable tie belt at the waist and a rounded hem.
         </p>
         <div class="buttons">
