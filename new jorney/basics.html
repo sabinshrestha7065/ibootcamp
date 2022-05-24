@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics-1*</title>
+    <style>
+        .container {
+            position: absolute;
+            width: 414px;
+            height: 825px;
+            left: 450px;
+            background-color: paleturquoise;
+        }
+
+        header h2 {
+            position: absolute;
+            width: 72px;
+            height: 22px;
+            left: 171px;
+            top: 49px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.17em;
+            text-transform: uppercase;
+            color: #161616;
+
+        }
+
+        .input {
+            position: absolute;
+            width: 390px;
+            height: 30px;
+            left: 12px;
+            top: 115px;
+            color: #fff;
+            border: 2px solid gainsboro;
+        }
+
+        .items {
+            position: absolute;
+            width: 390px;
+            height: 30px;
+            left: 12px;
+            top: 245px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #6C6C6C;
+            border: 2px solid gainsboro;
+
+        }
+
+        .buttons {
+            position: absolute;
+            left: 25px;
+            top: 170px;
+        }
+
+        .all {
+            position: absolute;
+            width: 46px;
+            height: 46px;
+            background: #000000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .top {
+            position: absolute;
+            width: 56px;
+            height: 46px;
+            left: 50px;
+            color: #000000;
+            background: #fff;
+            border: none;
+            border: 2px solid gainsboro;
+            cursor: pointer;
+        }
+
+        .sweet {
+            position: absolute;
+            width: 80px;
+            height: 46px;
+            left: 112px;
+            color: #000000;
+            background: #fff;
+            border: 2px solid gainsboro;
+            cursor: pointer;
+        }
+
+        .shirt {
+            position: absolute;
+            width: 76px;
+            height: 46px;
+            left: 200px;
+            color: #000000;
+            background: #fff;
+            border: 2px solid gainsboro;
+            cursor: pointer;
+        }
+
+        .jacket {
+            position: absolute;
+            width: 86px;
+            height: 46px;
+            left: 290px;
+            color: #000000;
+            background: #fff;
+            border: 2px solid gainsboro;
+            cursor: pointer;
+        }
+
+        .card-1 {
+            display: flex;
+            position: absolute;
+            width: 365px;
+            height: 110px;
+            left: 10px;
+            top: 300px;
+            border: 1px solid #DDDDDD;
+            box-sizing: border-box;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .card-2 {
+            display: flex;
+            position: absolute;
+            width: 365px;
+            height: 110px;
+            left: 10px;
+            top: 420px;
+            border: 1px solid #DDDDDD;
+            box-sizing: border-box;
+            background-color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Basics</h2>
+        </header>
+        <input type="search" placeholder="Search product" class="input">
+        <div class="buttons">
+            <button class="all">All</button>
+            <button class="top">Top</button>
+            <button class="sweet">Sweetshirt</button>
+            <button class="jacket">Jacket</button>
+            <button class="shirt">T-shirt</button>
+        </div>
+        <div class="search-result">
+            <input type="search" placeholder="result product" class="items">
+        </div>
+        <div class="card-1">
+            <img src="./Rectangle 103.jpg" alt="jacket">
+            <div>
+                <h4>Ribbed polo-neck jumper</h4>
+                <p>jack & james</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-2">
+                <img src="./Rectangle 86.jpg" alt="jacket">
+                <div>
+                    <h4>Ribbed polo-neck jumper</h4>
+                    <p>jack & james</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
