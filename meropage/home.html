@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            background-image: url(./photo.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 1000px;
+            height: 100%;
+        }
+
+        .main-container {
+            position: relative;
+            display: flex;
+            justify-items: center;
+            align-content: center;
+        }
+
+        .container {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            height: 30px;
+            width: 1300px;
+            background: white;
+            border-radius: 50px;
+        }
+
+        .left-side {
+            position: absolute;
+            left: 450px;
+            bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            font-size: large;
+            font-weight: bold;
+        }
+
+
+        .right-side div {
+            cursor: pointer;
+        }
+
+        .logo {
+            position: relative;
+            padding: 25px;
+        }
+
+        .logo img {
+            border-radius: 50pc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="logo">
+                <a class="navbar-brand" href="#"><img
+                        src="https://t4.ftcdn.net/jpg/03/10/98/05/360_F_310980526_Jdz2MuHJ70KmyFLQYON8a5r0iW1K8RUH.jpg"
+                        alt="logo" width="60px" height="40px"> </a>
+            </div>
+
+            <div class="left-side">
+
+                <div>Home</div>
+                <div>Question</div>
+                <div>Opinion</div>
+                <div>Contact</div>
+                <div>Blog</div>
+            </div>
+            <div class="right-side">
+                <input type="text" placeholder="search">
+                <button>search</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
