@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.first-page {
+    background-image: url(./picture/hero-bg-optimized@med\ \(1\).jpg);
+    height: 100vh;
+}
+
+.second-page {
+    background-image: url(./picture/feature-2-bg-mobile.jpg);
+    height: 100hv;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    display: flex;
+}
+
+.left-side-bar {
+    position: relative;
+    left: 80px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.right-side-bar {
+    display: flex;
+    position: relative;
+    left: 550px;
+    gap: 50px;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.right-side-bar a {
+    cursor: pointer;
+    color: #fff;
+    font-size: x-small;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.humble-one {
+    text-decoration: underline;
+}
+
+.our-journey {
+    text-decoration: none;
+}
+
+.our-journey:hover {
+    text-decoration: underline;
+}
+
+
+.right-side-bar button {
+    position: relative;
+    bottom: 24px;
+    left: 0;
+    border-radius: 3px;
+    height: 55px;
+    width: 200px;
+    cursor: pointer;
+    background-color: #FFF61A;
+    border: none;
+    font-size: x-small;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+}
+
+.right-side-bar button i {
+    position: relative;
+    top: 3px;
+    color: #000;
+    font-size: medium;
+}
+
+.car img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 330px;
+    top: 70px;
+}
+
+.left-text {
+    position: absolute;
+    top: 300px;
+    left: 140px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFF61A;
+    font-size: 8px;
+    letter-spacing: 0.14em;
+}
+
+.right-text {
+    position: absolute;
+    bottom: 300px;
+    left: 1100px;
+    color: #FFF61A;
+    font-weight: bold;
+    font-size: 8px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.split-line {
+    position: absolute;
+    display: inline;
+    left: 420px;
+    bottom: -75px;
+    color: #FFF61A;
+    text-transform: uppercase;
+}
+
+.split-line-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    bottom: 120px;
+    font-size: 90px;
+    font-weight: 30;
+}
+
+.line-text {
+    position: relative;
+    display: flex;
+    text-align: center;
+    bottom: 95px;
+    left: 100px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.down-arrow {
+    position: relative;
+    bottom: 120px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.down-arrow span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 45px;
+    height: 30px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 1px solid gray;
+    border-bottom: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.text-circle {
+    transform: translate(-50%, 50%);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    bottom: 150px;
+    height: 550px;
+    width: 550px;
+    border-radius: 100%;
+    border-top: 50px;
+    border: 2px solid gainsboro;
+
+    /* border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;  */
+    /* border-top-left-radius: 100px;
+    border-top-right-radius: 100px;  */
+}
+
+.text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-self: unset;
+    bottom: 60px;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.text .head {
+    margin-left: 43px;
+    padding: 40px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.text .paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    font-size: 17px;
+}
+
+/* .outer-car {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+} */
+
+.our-driver {
+    position: relative;
+    display: flex;
+    padding: 100px;
+    margin: 140px;
+    gap: 130px;
+}
+
+.text-power {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.text-power div {
+    display: flex;
+    color: skyblue;
+    font-size: 16px;
+    padding: 30px;
+}

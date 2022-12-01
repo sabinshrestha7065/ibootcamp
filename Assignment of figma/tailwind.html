@@ -5,15 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>button of tailwindcss</title>
+    <title></title>
+    <style>
+        .menu{
+            width: 350px;
+        }
+        .nav-link{
+            @apply flex items-center gap-4 whitespace-nowrap text-white/70 pl-6 pr-2 y-4 rounded-tr-3xl rounded-br-
+        }
+    </style>
 
 </head>
-<body >
-    <div class=" flex-1 w-100 h-100 background-color-red bg-red bg-red-400">
-        <h1 class="font-bold text-xl p-1.5 m-1.5">my life</h1>
-        <div class="font-mono">manish shrestha</div>
-        <div class="font-serif">civil engineering</div>
-        <div class="font-sans">always sleeping</div>
+<body class="bg-gray-200">
+    <div class="bg-gray-800 flex flex-col h-screen menu">
+        <a class="block p-7 text-2xl text-white/80 hover:text-white" href="#">Codemination</a>
+        <nav class="flex flex-col pr-9 flex-1 overflow-auto" >
+            <a class="nav-link" href="#">Dashboard</a>
+            <a class="nav-link" href="#">Pages</a>
+            <a class="nav-link" href="#">Chat</a>
+            <a class="nav-link" href="#">Chat</a>
+            <a class="nav-link" href="#">Calender</a>
+            <a class="nav-link" href="#">Email</a>
+            <a class="nav-link" href="#">Tasks</a>
+        </nav>
+        <nav class="flex border-t border-white/10">
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+        </nav>
     </div>
+   
+    
 </body>
 </html>
