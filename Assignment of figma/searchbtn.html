@@ -7,36 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>search</title>
     <style>
-        .container {
+        body {
             display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-        #icon:hover input {
-            border: 1px solid red;
-            background: red;
+        .box {
+            display: flex;
+            padding: 20px;
+        }
+        .box .input{
+            border: none;
+            width: 200px;
+            height: 20px;
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div id="input">
-            <input type="text" placeholder="search" >
+        <div class="box">
+            <label for="login"> Log-In</label>
+            <input type="text" placeholder="search" class="input">
         </div>
-        <div id="icon">
+        <div class="icon">
             <button>search</button>
         </div>
     </div>
-
-    <script>
-        const btn = document.getElementsByTagName("button")
-        const icon = document.getElementById("icon");
-        const input = document.getElementById("input");
-
-        icon.onclick = function () {
-            icon.textContent = icon.textContent.input;
-        };
-    </script>
 
 </body>
 

@@ -15,7 +15,16 @@ body {
 
 .second-page {
     background-image: url(./picture/feature-2-bg-mobile.jpg);
-    height: 100hv;
+    height: 110vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.third-page {
+    /* background-image: url(./picture/hero-bg-optimized@med\ \(1\).jpg); */
+    height: 110vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nav-bar {
@@ -184,23 +193,21 @@ body {
     height: 550px;
     width: 550px;
     border-radius: 100%;
-    border-top: 50px;
-    border: 2px solid gainsboro;
-
-    /* border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;  */
-    /* border-top-left-radius: 100px;
-    border-top-right-radius: 100px;  */
+    border: 6px solid #f8f474;
+    border-bottom: 0;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .text {
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-self: unset;
     bottom: 60px;
     font-weight: 400;
-    color: #000;
+    color: #FFF61A;
     letter-spacing: 0.14em;
     text-transform: uppercase;
 }
@@ -222,12 +229,13 @@ body {
     font-size: 17px;
 }
 
-/* .outer-car {
+.outer-car {
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-} */
+    top: 140px;
+}
 
 .our-driver {
     position: relative;
