@@ -1,0 +1,203 @@
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    background-image: url(./360_F_369005893_UYbUUUHDiB0HT7vs7EpO0JZ4vf830R5K.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.navgation-bar {
+    display: flex;
+    width: 620px;
+    height: 40px;
+    background: rgb(226, 170, 96);
+    color: #fff;
+    border-radius: 30px;
+}
+
+.leftside {
+    display: flex;
+    align-items: center;
+}
+
+.leftside ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.leftside ul li {
+    margin-right: 20px;
+}
+
+.leftside a {
+    text-decoration: none;
+    color: #555;
+}
+
+/* .leftside ul li a {
+    color: orangered;
+} */
+
+.home {
+    color: orangered;
+}
+
+
+.rightside {
+    display: flex;
+    align-items: center;
+    padding: 11px;
+}
+
+.icon i {
+    color: blue;
+}
+
+.navbar {
+    position: fixed;
+    top: -1px;
+    right: 2px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    background-color: rgb(30, 190, 30);
+    height: 20px;
+    width: 97.5%;
+
+}
+
+.left-sidebar {
+    display: flex;
+}
+
+.logo-name {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: serif;
+
+}
+
+.left-sidebar .schoolname {
+    padding: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+
+.right-sidebar {
+    flex: 1;
+    text-align: right;
+}
+
+.right-sidebar ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.right-sidebar ul li {
+    display: inline-block;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.right-sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-danger button {
+    height: 40px;
+    width: 250px;
+    margin: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    border-radius: 40px;
+}
+
+main {
+    padding: 100px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.more {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 70px;
+
+}
+
+.more button {
+    display: flex;
+    align-items: center;
+    width: 162px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid;
+    color: #524e4e;
+}
+
+.more .arrow {
+    position: relative;
+    right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #524e4e;
+    border-radius: 50px;
+    cursor: pointer;
+    transition-property: width;
+    transition-duration: 2s;
+}
+
+.more .arrow:hover {
+    width: 162px;
+}
+
+.more i {
+    font-size: larger;
+    color: #fff;
+}
+
+.box {
+    display: flex;
+    gap: 30px;
+}
+
+.box1 {
+    height: 300px;
+    width: 300px;
+    color: #fff;
+    background-color: orangered;
+    border: 1px solid black;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2 {
+    height: 300px;
+    width: 300px;
+    color: #fff;
+    background-color: rgb(11, 11, 97);
+    border: 1px solid black;
+    border-radius: 7px;
+}

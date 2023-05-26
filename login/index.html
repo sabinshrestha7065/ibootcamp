@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>Login-page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            font-size: 15px;
+            font-family: 'poppins', sans-serif;
+            background-image: url(./feature-1-bg-mobile.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .login-container {
+            display: flex;
+            margin: 20px;
+            padding: 30px;
+            align-items: center;
+            justify-content: center;
+            height: 450px;
+            width: 310px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            background-image: url(https://e0.pxfuel.com/wallpapers/136/559/desktop-wallpaper-e-mail-icons-move-in-perspective-view-on-dark-grid-background-for-your-mobile-tablet-explore-background-internet-background-internet-internet-background-internet.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+        }
+
+        .head {
+            font-size: larger;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+
+        .first-input,
+        .second-input {
+            position: relative;
+            background-color: transparent;
+            border-bottom: 1px solid #fff;
+            margin: 30px;
+        }
+
+        .first-input label,
+        .second-input label {
+            position: absolute;
+            top: 20%;
+            left: -2px;
+            transform: translateY(-100%);
+            color: #fff;
+            pointer-events: none;
+        }
+
+        input:focus~label,
+        input:focus~ :valid {
+            top: -5px;
+        }
+
+        .first-input input,
+        .second-input input {
+            width: 100%;
+            height: 50px;
+            background: transparent;
+            border: none;
+            outline: none;
+            padding: 0 35px 0 5px;
+            color: #fff;
+        }
+
+        .first-input i,
+        .second-input i {
+            position: absolute;
+            right: -20px;
+            color: #fff;
+            top: 20px;
+            font-size: 1.2em;
+        }
+
+        .dot-box {
+            display: flex;
+            text-align: center;
+            gap: 3px;
+            margin: 10px;
+            color: #fff;
+        }
+
+
+        .dot-box label a {
+            font-size: 17px;
+            color: darkred;
+        }
+
+        .btn-danger {
+            height: 40px;
+            width: 250px;
+            margin: 20px;
+            color: #fff;
+            cursor: pointer;
+            font-size: medium;
+            font-weight: bold;
+            background-color: black;
+            border: none;
+            border-radius: 40px;
+        }
+
+        .btn-danger:hover {
+            border: 2px solid blanchedalmond;
+            background-color: transparent;
+            color: #000;
+        }
+
+        .register {
+            margin: 20px;
+            padding-left: 12px;
+            color: #fff;
+        }
+
+        .register a {
+            font-size: 17px;
+            color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <form action="">
+            <div class="head">
+                <h3>Login-In</h3>
+            </div>
+            <div class="login-page">
+                <div class="first-input">
+                    <i class="bi bi-envelope"></i>
+                    <input type="email" class="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="second-input">
+                    <i class="bi bi-lock"></i>
+                    <input type="password" class="password">
+                    <label for="password">Password</label>
+                </div>
+                <div class="dot-box">
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">Remember Me <a href="#">Forgot Password?
+                        </a> </label>
+
+                </div>
+            </div>
+
+            <div class="btn login">
+                <button class="but btn-danger">Log in</button>
+            </div>
+
+            <div class="register">
+                <span>Don't have a account? <a href="#"> Register!</a>
+                </span>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

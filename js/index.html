@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript|Beginner</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="demo">favourite</h1>
+        <ul>
+            <li class="list-items">song</li>
+            <li class="list-items">video</li>
+        </ul>
+
+    </div>
+    <script>
+        // DOM Manipulation
+
+        const container = document.querySelector('div');
+        container.style.fontFamily = 'sans-serif'
+
+        //  console.log(container.innerText);
+        // console.log(container.innerHTML);
+        // console.log(container.textContent);
+
+
+        const demo = document.getElementById("demo");
+        const demo1 = demo.style.color = 'red'
+        //console.log(demo);
+
+        const ul = document.querySelector('ul');
+        const li = document.createElement('li');
+
+        // adding elements
+        ul.append(li);
+
+        // modifying the text
+        li.innerText = 'facebook';
+        // li.remove();
+
+        const ul1 = document.querySelector('ul');
+
+        console.log(ul1.parentNode.parentNode);
+        //console.log(ul1.parentElement.parentElement);
+
+        const html = document.documentElement;
+        // console.log(html.parentElement);
+        // console.log(html.parentNode)
+
+        const ul2 = document.querySelector('ul');
+        //console.log(ul.childNodes)
+        //  console.log(ul.firstChild)
+        // console.log(ul.lastChild)
+
+        // nested for loop
+
+        /*  for (i = 0; i < 3; i++) {
+              //  console.log(i);
+              document.write(" <strong> Outer Loop </strong>");
+              document.write(i);
+              document.write("</br>");
+              for (j = 0; j < 5; j++) {
+                  //console.log(j);
+                  document.write(" <strong> Inner Loop </strong>");
+                  document.write(j);
+              };
+          };*/
+
+
+        // wFhile loop
+
+        var i = 0;
+        while (i < 5) {
+            // console.log(i);
+            i++;
+        }
+
+        const students = {
+            name: "manish",
+            surname: "shrestha",
+            age: 23
+        };
+
+        //document.getElementsByClassId("demo").innerHTML = students;
+
+        function person(hello) {
+            console.log(students, 'hello' + ' ' + hello);
+        };
+        //person('prabin sir');
+
+        // convert number to string.
+
+        let rollNo = 5;
+        rollNo = rollNo + "";
+        //console.log(typeof (rollNo))
+
+        // convert string to number.
+
+        let string = +'2';
+
+        //console.log(typeof string)
+
+        // booleans
+
+        let num1 = 2;
+        let num2 = 3;
+        //console.log(num1 < num2);
+        //  console.log(num1 == num2);
+        // console.log(num1 != num2);
+
+
+        // if else condition
+
+        let age1 = 18;
+        if (age1 <= 18) {
+            console.log("you can play videogame.")
+        } else {
+            console.log("you can play ludo")
+        };
+
+        // string concatenation
+
+        let string1 = "12";
+        let string2 = "13";
+
+        // console.log(string1 + "" + string2)
+        //console.log(Number(string1) + Number(string2))
+
+        //BigInt
+
+        let myNumber = BigInt(12);
+        let sameMyNumber = 12n;
+
+        // console.log(sameMyNumber + myNumber);
+        let num = 13;
+        if (num % 2 === 0) {
+            console.log('even');
+        } else {
+            console.log('odd');
+        };
+    </script>
+</body>
+</html>
