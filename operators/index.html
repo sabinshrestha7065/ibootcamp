@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form">
+        <h1>operators</h1>
+        <div>
+            <label for="firstnumber" class="form-label">First Number</label>
+            <input type="text" value="3" class="form-control" id="firstNumber" placeholder="Enter the first-number">
+        </div>
+        <div>
+            <label for="secondnumber" class="form-label">Second Number</label>
+            <input type="text" value="4" class="form-control" id="secondNumber" placeholder="Enter the second-number">
+        </div>
+        <button id="add">add</button>
+        <button id="sub">sub</button>
+        <button id="multiple">multiple</button>
+        <button id="divide">divide</button>
+    </div>
+    <script>
+        // dom => document Object model
+
+        const firstInteger = document.getElementById("firstNumber").value;
+        const secondInteger = document.getElementById("secondNumber").value;
+        const btn = document.getElementById("add");
+        const btn2 = document.getElementById("sub");
+        const btn3 = document.getElementById("multiple");
+        const btn4 = document.getElementById("divide");
+        const firstDigit = parseInt(firstInteger);
+        const secondDigit = parseInt(secondInteger);
+
+        // operation case
+        const a = firstDigit + secondDigit;
+        const b = firstDigit - secondDigit;
+        const c = firstDigit * secondDigit;
+        const d = firstDigit / secondDigit;
+
+        // onclick
+        btn.onclick = function () {
+            document.write(a);
+        };
+
+        btn2.onclick = function () {
+            document.write(b);
+        };
+
+        btn3.onclick = function () {
+            document.write(c);
+        };
+        btn4.onclick = function () {
+            document.write(d);
+        };
+    </script>
+</body>
+
+</html>

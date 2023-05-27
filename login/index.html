@@ -17,25 +17,22 @@
             align-content: center;
             justify-content: center;
             font-size: 15px;
-            font-family: 'poppins', sans-serif;
-            background-image: url(./feature-1-bg-mobile.jpg);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #503b3b;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
         .login-container {
             display: flex;
-            margin: 20px;
+            margin-top: 5%;
             padding: 30px;
             align-items: center;
             justify-content: center;
             height: 450px;
-            width: 310px;
-            background: transparent;
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            background-image: url(https://e0.pxfuel.com/wallpapers/136/559/desktop-wallpaper-e-mail-icons-move-in-perspective-view-on-dark-grid-background-for-your-mobile-tablet-explore-background-internet-background-internet-internet-background-internet.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
+            width: 300px;
+            border: 2px solid rgba(37, 34, 34, 0.5);
+            background-color: rgb(99, 124, 146);
             backdrop-filter: blur(15px);
             border-radius: 20px;
         }
@@ -84,7 +81,7 @@
         .first-input i,
         .second-input i {
             position: absolute;
-            right: -20px;
+            right: -40px;
             color: #fff;
             top: 20px;
             font-size: 1.2em;
@@ -94,25 +91,31 @@
             display: flex;
             text-align: center;
             gap: 3px;
-            margin: 10px;
+            margin: 20px;
             color: #fff;
         }
 
 
         .dot-box label a {
             font-size: 17px;
-            color: darkred;
+            color: blue;
+            text-decoration: none;
+        }
+
+        .btn-login {
+            display: flex;
+            justify-content: center;
         }
 
         .btn-danger {
             height: 40px;
-            width: 250px;
+            width: 125px;
             margin: 20px;
             color: #fff;
             cursor: pointer;
             font-size: medium;
             font-weight: bold;
-            background-color: black;
+            background-color: rgb(54, 49, 49);
             border: none;
             border-radius: 40px;
         }
@@ -125,13 +128,14 @@
 
         .register {
             margin: 20px;
-            padding-left: 12px;
+            padding-left: 20px;
             color: #fff;
         }
 
         .register a {
             font-size: 17px;
-            color: darkred;
+            color: blue;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -161,8 +165,9 @@
                 </div>
             </div>
 
-            <div class="btn login">
-                <button class="but btn-danger">Log in</button>
+            <div class="btn-login">
+                <button class="btn btn-danger">Log in</button>
+                <button class="btn btn-danger">Register</button>
             </div>
 
             <div class="register">
