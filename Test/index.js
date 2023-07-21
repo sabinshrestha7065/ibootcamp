@@ -106,3 +106,5 @@ const num2 = 24;
 // console.log(num1 > num2);
 // document.write(num1 > num2);
 
+
+

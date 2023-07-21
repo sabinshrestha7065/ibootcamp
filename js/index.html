@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript|Beginner</title>
 </head>
+
 <body>
     <div class="container">
         <h1 id="demo">favourite</h1>
@@ -120,6 +122,14 @@
             console.log("you can play ludo")
         };
 
+        let david;
+
+        if (david) {
+            console.log(david)
+        } else {
+            console.log('you are handsome')
+        };
+
         // string concatenation
 
         let string1 = "12";
@@ -140,6 +150,30 @@
         } else {
             console.log('odd');
         };
+
+        // ternary operatoer / conditional operator
+        let mark = 12;
+        let result = mark <= 5 ? 'pass' : 'fail';
+
+        console.log(result);
+
+        if (mark >= 12) {
+            result = 'pass'
+        } else {
+            result = 'fail'
+        }
+
+        //console.log(result);
+        // and or operator
+        const studentName = 'Manish';
+        const rollNo2 = 34;
+
+        if (studentName[0] === 'M' && rollNo2 > 12) {
+            console.log('hello')
+        }else{
+            console.log('wrong')
+        }
     </script>
 </body>
+
 </html>
